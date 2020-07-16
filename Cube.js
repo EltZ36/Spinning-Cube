@@ -28,7 +28,7 @@ function thing(x){
 }
 function shapes(){
   sphere(40);
-  rotateZ(frameCount * 4);
+  rotateZ(millis() / 4);
   rotateX(frameCount * 1);
   rotateY(frameCount * 2);
 }
