@@ -13,10 +13,10 @@ function thing(x){
   stroke(255,255,255);
   ambientLight(0,255,255);
   ambientMaterial(0,0,245);
-  //rotateZ(frameCount * 4);
+  rotateZ(frameCount * 4);
   torus(80+x,15);
-  //rotateX(frameCount * 1);
-  //rotateY(frameCount * 2);
+  rotateX(frameCount * 1);
+  rotateY(frameCount * 2);
   push();
   translate(-200,0,0);
   box(150+x,20+x,50);
