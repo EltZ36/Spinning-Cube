@@ -4,6 +4,9 @@ function setup(){
   createCanvas(1000,700,WEBGL);
 }
 function draw(){
+  if (mouseIsPressed){
+    frameCount = random(-100,100);
+  }
   thing();
   thing(x);
   shapes();
@@ -25,15 +28,10 @@ function thing(x){
   box(150+x,20+x,50);
   translate(-200,0,200);
   pop();
-  pop();
-}
-
-function mousePressed(){
-  frameCount = frameCount + 10;
 }
 function shapes(){
-  sphere(40);
   rotateZ(millis() / 4);
   rotateX(frameCount * 1);
   rotateY(frameCount * 2);
+  sphere(20);
 }
