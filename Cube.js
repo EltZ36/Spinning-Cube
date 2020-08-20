@@ -7,6 +7,7 @@ function draw(){
   thing();
   thing(x);
   shapes();
+  mousePressed();
 }
 function thing(x){
   background(255);
@@ -25,6 +26,10 @@ function thing(x){
   translate(-200,0,200);
   pop();
   pop();
+}
+
+function mousePressed(){
+  frameCount = frameCount + 10;
 }
 function shapes(){
   sphere(40);
