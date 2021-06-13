@@ -1,6 +1,5 @@
-var x;
 function setup(){
-  x = 20;
+  var x = 20;
   createCanvas(1000,700,WEBGL);
 }
 function draw(){
